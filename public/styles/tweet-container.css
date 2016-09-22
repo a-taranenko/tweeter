@@ -5,7 +5,8 @@
   border-radius: 5px;
   position: relative;
   top: 40px;
-  margin: 2em 2em;
+  margin: 0em 2em;
+  margin-bottom: 20px;
 }
 
 .container .tweet-header {

@@ -33,6 +33,12 @@
 
     <!-- Composer-char-counter JS -->
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
+    <!-- Form submission JS, JQuery, AJAX -->
+    <script type="text/javascript" src="/scripts/form-submit.js"></script>
+
+    <!-- Form toggle JS, JQuery -->
+    <script type="text/javascript" src="/scripts/form-toggle.js"></script>
   </head>
 
   <body>
@@ -41,6 +47,7 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
+      <button type="button" id="compose-button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Compose</button>
     </nav>
 
     <!-- Page-specific (main) content here -->
@@ -48,8 +55,8 @@
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form>
-          <textarea name="text" placeholder="What are you humming about?"></textarea>
-          <input type="submit" value="Tweet">
+          <textarea name="text" placeholder="What are you humming about?" id="text-input"></textarea>
+          <input type="submit" value="Tweet" id="submit-button">
           <span class="counter">140</span>
         </form>
       </section>
