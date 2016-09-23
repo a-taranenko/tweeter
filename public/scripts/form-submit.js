@@ -1,5 +1,3 @@
-console.log('is this a function?', loadTweets)
-
 $(document).ready(function() {
   var $form = $('form');
 
@@ -19,9 +17,7 @@ $(document).ready(function() {
         $.ajax({
           url: '/tweets',
           method: 'POST',
-
           data: textSubmitted,
-
           success: function (morePostsHtml) {
             console.log('Success: ', morePostsHtml);
             loadTweets();
@@ -29,7 +25,5 @@ $(document).ready(function() {
         });
       }
     }
-
-
   });
 });
